@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Mengatur karakter encoding untuk dokumen HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur viewport agar responsif di perangkat mobile -->
+    <title>Weather App</title> <!-- Judul halaman aplikasi cuaca -->
+    <link rel="stylesheet" href="style.css"> <!-- Menyertakan file CSS eksternal untuk styling halaman -->
+</head>
+<body>
+    <div id="app"> <!-- Kontainer utama aplikasi -->
+        <header> <!-- Bagian header untuk judul dan input lokasi -->
+            <h1>Weather App</h1> <!-- Judul utama aplikasi cuaca -->
+            <div id="location-input"> <!-- Kontainer untuk input lokasi -->
+                <input type="text" id="location" placeholder="Enter location"> <!-- Input teks untuk memasukkan lokasi -->
+                <button onclick="getWeather()">Get Weather</button> <!-- Tombol untuk memanggil fungsi getWeather() dan mendapatkan cuaca -->
+            </div>
+        </header>
+
+        <section id="current-weather"> <!-- Bagian untuk menampilkan cuaca saat ini -->
+            <h2>Current Weather</h2> <!-- Sub-judul untuk cuaca saat ini -->
+            <div id="weather-info"></div> <!-- Kontainer untuk menampilkan informasi cuaca saat ini -->
+        </section>
+
+        <section id="forecast"> <!-- Bagian untuk menampilkan prakiraan cuaca -->
+            <h2>Weather forecast</h2> <!-- Sub-judul untuk prakiraan cuaca -->
+            <div id="forecast-info"></div> <!-- Kontainer untuk menampilkan informasi prakiraan cuaca -->
+        </section>
+
+        <section id="map"> <!-- Bagian untuk menampilkan peta cuaca -->
+            <h2>Weather Map</h2> <!-- Sub-judul untuk peta cuaca -->
+            <div id="map-container"></div> <!-- Kontainer untuk menampilkan peta cuaca -->
+        </section>
+
+        <section id="sunrise-sunset"> <!-- Bagian untuk menampilkan waktu matahari terbit dan terbenam -->
+            <h2>Sunrise & Sunset</h2> <!-- Sub-judul untuk waktu matahari terbit dan terbenam -->
+            <div id="sun-info"></div> <!-- Kontainer untuk menampilkan informasi matahari terbit dan terbenam -->
+        </section>
+
+        <section id="news"> <!-- Bagian untuk menampilkan berita cuaca terbaru -->
+            <h2>Weather News</h2> <!-- Sub-judul untuk berita cuaca -->
+            <div id="news-info"></div> <!-- Kontainer untuk menampilkan informasi berita cuaca -->
+        </section>
+    </div>
+
+    <script src="script.js"></script> <!-- Menyertakan file JavaScript eksternal untuk fungsi interaktif aplikasi -->
+</body>
+</html>
